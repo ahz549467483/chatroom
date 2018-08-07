@@ -1,0 +1,27 @@
+{
+  "name": "chatroom",
+  "version": "1.0.0",
+  "description": "this is a demo use node.js",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahz549467483/chatroom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahz549467483/chatroom/issues"
+  },
+  "homepage": "https://github.com/ahz549467483/chatroom#readme",
+  "dependencies": {
+    "mime": "^2.3.1",
+    "socket.io": "^2.1.1"
+  }
+}
