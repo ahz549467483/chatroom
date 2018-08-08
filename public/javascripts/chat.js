@@ -44,12 +44,12 @@ function processUserInput(chatApp, socket) {
     if(message.charAt(0) == '/'){
         systemMessage = chatApp.processCommand(message);
         if(systemMessage){
-            $('#message').append(divSystemContentElement(systemMessage));
+            $('#messages').append(divSystemContentElement(systemMessage));
         }
     }else{
         chatApp.sendMessage($('#room').text(), message);
-        $('#message').append(divEscapedContentElement(message));
-        $('#message').scrollTop($('#message').prop('scrollHeight'))
+        $('#messages').append(divEscapedContentElement(message));
+        $('#messages').scrollTop($('#message').prop('scrollHeight'))
     }
 
     $('#send-message').val(' ');
